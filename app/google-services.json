@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "293807152386",
+    "project_id": "home-2ccd2",
+    "storage_bucket": "home-2ccd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293807152386:android:5098f8bea8c202cb58761b",
+        "android_client_info": {
+          "package_name": "com.example.android3homework9mc5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPoYXlAVr00z44rzXywC5Ues-O0Y-jv3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
