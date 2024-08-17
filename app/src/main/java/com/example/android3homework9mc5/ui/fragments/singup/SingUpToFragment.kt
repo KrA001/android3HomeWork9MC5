@@ -22,7 +22,7 @@ class SingUpToFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         _binding = FragmentSingUpBinding.inflate(inflater, container, false)
         return binding.root
@@ -37,7 +37,7 @@ class SingUpToFragment : Fragment() {
     }
 
     private fun setUpListener() {
-        binding.tvForgotPassword.setOnClickListener{
+        binding.tvForgotPassword.setOnClickListener {
             findNavController().navigate(R.id.homeFragment)
         }
     }
@@ -57,7 +57,12 @@ class SingUpToFragment : Fragment() {
         }
     }
 
-    private fun validateInputs(firstName: String, lastName: String, email: String, password: String): Boolean {
+    private fun validateInputs(
+        firstName: String,
+        lastName: String,
+        email: String,
+        password: String,
+    ): Boolean {
         var isValid = true
 
         if (firstName.isEmpty()) {
@@ -113,7 +118,11 @@ class SingUpToFragment : Fragment() {
                 } else {
                     showLoading(false)
                     Log.e("Register", "createUserWithEmail:failure", task.exception)
-                    Toast.makeText(context, "Регистрация не удалось: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        context,
+                        "Регистрация не удалось: ${task.exception?.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
     }
@@ -131,7 +140,11 @@ class SingUpToFragment : Fragment() {
                     updateUI(user)
                 } else {
                     Log.e("Register", "updateProfile:failure", task.exception)
-                    Toast.makeText(context, "Ошбка обновления профиля: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        context,
+                        "Ошбка обновления профиля: ${task.exception?.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
     }

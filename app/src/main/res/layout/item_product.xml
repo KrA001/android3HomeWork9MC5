@@ -16,11 +16,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
         <ImageView
             android:id="@+id/iv_product_cover"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="match_parent"
             android:contentDescription="@string/product_cover_content_description" />
+
+            <ImageView
+                android:id="@+id/favorite_product"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fallback_image"
+                android:layout_gravity="end"/>
+
+        </FrameLayout>
 
         <TextView
             android:id="@+id/tv_product_price"

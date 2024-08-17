@@ -38,4 +38,9 @@
     <string name="resend_confirmation_email">Отправить ещё раз</string>
     <string name="check_is_email_confirmed">Проверить</string>
     <string name="email_not_confirmed">Электронная почта не подтверждена!</string>
+    <string name="main">Главная</string>
+    <string name="catalo">Каталог</string>
+    <string name="korzina">Корзина</string>
+    <string name="akciay">Акция</string>
+    <string name="profil">Профиль</string>
 </resources>

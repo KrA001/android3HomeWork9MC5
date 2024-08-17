@@ -2,8 +2,10 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     //Firebase
-    id("com.google.gms.google-services")
+    alias(libs.plugins.gms.google.services)
+    // Kotlin
     alias(libs.plugins.kotlin.kapt)
+    //Hilt
     alias(libs.plugins.hilt.android)
 }
 
@@ -67,6 +69,9 @@ dependencies {
     //Firebase authentication
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.android.gms:play-services-auth:21.0.0")
+
+    //Firestore
+    implementation("com.google.firebase:firebase-firestore")
 
     // Проверьте последнюю версию в документации
     implementation ("com.google.android.material:material:1.9.0")
